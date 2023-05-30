@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'LightPixel';
+  src: url('LightPixel.ttf');
+} 
+
+@font-face {
+  font-family: 'Pacman';
+  src: url('Pacman.ttf');
+} 
+
+body {
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-family: 'LightPixel';
+}
+
+.board-container {
+  margin: auto;
+}
+
+table {
+  height: 50px;
+}
+
+.cell {
+  font-size: 1.6em;
+  font-family: 'Pacman';
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.left {
+  transform: scaleX(-1);
+}
+
+.right {
+  transform: scaleX(1);
+}
+
+.up {
+  transform: rotate(270deg);
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.cell img {
+  width: 0.8em;
+  height: 0.8em;
+  /* /* transform: rotate(270deg); */
+  /* transform: scaleX(-1); */
+  /* transform: rotate(90deg); */
+  /* transform: scaleX(1); */
+}
+
+.modal {
+  display: none;
+  background-color: rgb(1, 5, 87);
+  border: 2px solid rgb(0, 0, 0);
+  outline: 2px solid #ffffff;
+  border-radius: 3%;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 175px);
+}
+
+button {
+  background-color: rgb(255, 225, 0);
+  border: 2px solid rgb(0, 0, 0);
+  outline: 2px solid #ffffff;
+  /* border: solid; */
+  /* border-color: #ffffff; */
+  border-radius: 6%;
+  margin: 15px;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  font-family: 'LightPixel';
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: -2.5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #222453, #302989);
+  transition: 700ms;
+}
